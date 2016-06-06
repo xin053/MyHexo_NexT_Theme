@@ -26,10 +26,10 @@ rss:
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
   archives: /archives
+  categories: /categories
   tags: /tags
+  about: /about
   #commonweal: /404.html
 
 
@@ -56,8 +56,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 
 
@@ -117,8 +117,11 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/xin053
+  微博: http://weibo.com/xin053
+  知乎: http://www.zhihu.com/people/xin053
+  csdn: http://blog.csdn.net/zhouzixin053
 
 
 # Social Links Icons
@@ -132,7 +135,7 @@ social_icons:
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  微博: weibo
 
 
 # Sidebar Avatar
@@ -158,8 +161,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -173,11 +176,12 @@ sidebar:
 
 
 # Blogrolls
-#links_title: Links
-#links_layout: block
+links_title: 友情链接
+links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  看雪: http://bbs.pediy.com/
+  怪咖家园: http://www.geeklzh.com/
 
 
 # ---------------------------------------------------------------
@@ -198,7 +202,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
@@ -235,10 +239,10 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 95bc477a974f85651897b76f543028bb
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: xin053
 
 # Disqus
 #disqus_shortname:
@@ -246,26 +250,27 @@ mathjax:
 # Baidu Share
 # Available value:
 #    button | slide
-#baidushare:
-##  type: button
+baidushare: true
+  ##type: button
 
 # Share
-#jiathis:
-#add_this_id:
+jiathis: true
+add_this_id: ra-575386bff8b66ce8
+
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: jFTy9MrTO4piYCnfdfFFpOLb9SCydVuSBPbqgakCzCM
 
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-78789863-1
 
 # CNZZ count
-#cnzz_siteid:
+#cnzz_siteid:true
 
 
 # Make duoshuo show UA
@@ -273,9 +278,9 @@ mathjax:
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
+  admin_enable: true
+  user_id: 10192284
+  admin_nickname: 博主大人
 
 
 # Facebook SDK Support.
@@ -389,3 +394,39 @@ images: images
 
 # Theme version
 version: 5.0.1
+
+
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /images/wechat.png
+alipay: /images/alipay.png
+
+## 站点建立时间
+since: 2016
+
+open_in_new: true
+
+copyright: true
+# 目录中标题不换行
+toc_nowrap: true
+# 是否开启主页及加载头像时的动画效果
+animate: true
+# 是否开启边栏多标签切换
+# Birdhouse button in left column
+tagcloud: true
+
+## 添加分类，标签云widget
+widgets:
+- category
+- tagcloud
+- blogroll
+
+plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+  
+url: https://xin053.github.io
