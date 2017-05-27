@@ -245,10 +245,10 @@ mathjax:
 baidu_analytics: 95bc477a974f85651897b76f543028bb
 
 # Duoshuo ShortName
-duoshuo_shortname: xin053
+# duoshuo_shortname: xin053
 
 # Disqus
-#disqus_shortname:
+disqus_shortname: xin053
 
 # Baidu Share
 # Available value:
